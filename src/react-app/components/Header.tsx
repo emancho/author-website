@@ -83,7 +83,7 @@ export default function Header() {
 								lineHeight: 1,
 							}}
 						>
-							Eleanor Vance
+							Eliara Lee
 						</Typography>
 						<Typography
 							sx={{

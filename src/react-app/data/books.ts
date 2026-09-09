@@ -2,38 +2,21 @@ export interface Book {
 	title: string;
 	year: string;
 	blurb: string;
+	description?: string;
 }
 
 export const books: Book[] = [
 	{
-		title: 'Northlight',
-		year: '2025',
+		title: 'Body and Soul',
+		year: '2026',
 		blurb: 'A lighthouse keeper’s daughter returns to the island that shaped her.',
+		description: 'A lighthouse keeper’s daughter returns to the island that shaped her, confronting the past and discovering the secrets that bind her family together.',
 	},
 	{
-		title: 'The Tidewatchers',
-		year: '2023',
+		title: 'If I Had My Way',
+		year: '2026',
 		blurb: 'Three generations of women bound by a single stretch of coastline.',
-	},
-	{
-		title: 'Ember Season',
-		year: '2021',
-		blurb: 'A wildfire, a small town, and the summer that changed everything.',
-	},
-	{
-		title: 'Paper Cities',
-		year: '2019',
-		blurb: 'Two architects redraw a city — and the lives inside it.',
-	},
-	{
-		title: 'The Quiet Hours',
-		year: '2017',
-		blurb: 'A night nurse collects the stories patients only tell at 3 a.m.',
-	},
-	{
-		title: 'A Map of Small Rooms',
-		year: '2015',
-		blurb: 'The luminous, award-winning debut about the houses we carry with us.',
+		description: 'Three generations of women',
 	},
 ];
 

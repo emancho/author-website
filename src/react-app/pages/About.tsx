@@ -18,7 +18,7 @@ export default function About() {
 			>
 				<Box
 					role="img"
-					aria-label="Eleanor Vance portrait"
+					aria-label="Eliara  Lee portrait"
 					sx={{
 						aspectRatio: '4 / 5',
 						background: `linear-gradient(155deg, ${tokens.band} 0%, ${tokens.muted} 140%)`,
@@ -39,7 +39,7 @@ export default function About() {
 							mt: 1,
 						}}
 					>
-						Eleanor Vance
+						Eliara Lee
 					</Typography>
 					<Typography
 						sx={{
@@ -58,7 +58,7 @@ export default function About() {
 						<Typography
 							sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 16, lineHeight: 1.8, color: tokens.bodyDark }}
 						>
-							Eleanor Vance was born and raised on the coast of Maine. Before turning to fiction,
+							Eliara  Lee was born and raised on the coast of Maine. Before turning to fiction,
 							she spent nearly a decade as a documentary researcher, work that took her from
 							fishing towns to national archives and taught her to listen for the story
 							underneath the story.

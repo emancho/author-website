@@ -3798,7 +3798,7 @@ type AiSearchConfig = {
     score_threshold?: number;
     max_num_results?: number;
     cache?: boolean;
-    /** Similarity threshold for cache hits. Stricter = fewer cache hits but higher relevance. */
+    /** Similarity threshold for cache hits. Stricter = fewer cache hits but higher releLee. */
     cache_threshold?: 'super_strict_match' | 'close_enough' | 'flexible_friend' | 'anything_goes';
     custom_metadata?: Array<{
         field_name: string;

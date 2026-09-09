@@ -31,7 +31,7 @@ export default function Events() {
 						mt: 2,
 					}}
 				>
-					Catch Eleanor at a reading, signing, or festival this season. New dates are added
+					Catch Eliara  at a reading, signing, or festival this season. New dates are added
 					regularly.
 				</Typography>
 			</Box>

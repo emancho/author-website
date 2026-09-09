@@ -28,7 +28,7 @@ function AboutTeaser() {
 			>
 				<Box
 					role="img"
-					aria-label="Eleanor Vance author photo"
+					aria-label="Eliara  Lee author photo"
 					sx={{
 						aspectRatio: '4 / 5',
 						background: `linear-gradient(155deg, ${tokens.band} 0%, ${tokens.muted} 140%)`,
@@ -47,8 +47,7 @@ function AboutTeaser() {
 							mt: 2,
 						}}
 					>
-						Eleanor Vance writes about the places we come from and the people we become when we
-						finally return to them.
+						Eliara Lee, Storyteller and Novelist
 					</Typography>
 					<Typography
 						sx={{
@@ -60,8 +59,8 @@ function AboutTeaser() {
 							mt: 2.5,
 						}}
 					>
-						Raised on the coast of Maine, she spent a decade as a documentary researcher before
-						turning to fiction. <em>Northlight</em> is her sixth novel.
+						Eliara Lee’s love of storytelling started at a young age. Growing up in the Midwest-Akron, Ohio to be exact, her fondest memories were getting her first library card and eagerly awaiting the BookMobile. 
+						Her imaginative talents honed since entertaining her first audience, her younger siblings, is now used to bring stories to life in the books she writes.
 					</Typography>
 					<Box
 						component={Link}
@@ -78,7 +77,7 @@ function AboutTeaser() {
 							borderBottom: `1.5px solid ${tokens.accent}`,
 						}}
 					>
-						More about Eleanor →
+						More about Eliara  →
 					</Box>
 				</Box>
 			</Box>
