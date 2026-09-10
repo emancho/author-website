@@ -3,9 +3,10 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router';
 import Eyebrow from '../components/Eyebrow';
-import BookCard from '../components/BookCard';
-import { featuredBooks } from '../data/books';
+// import BookCard from '../components/BookCard';
+// import { featuredBooks } from '../data/books';
 import { tokens, fadeUp } from '../theme';
+import { books } from '../data/books';
 
 function AboutTeaser() {
 	return (
@@ -106,7 +107,7 @@ function NewNovelHero() {
 				}}
 			>
 				<Box>
-					<Eyebrow>The New Novel · 2025</Eyebrow>
+					<Eyebrow>One of their works</Eyebrow>
 					<Typography
 						sx={{
 							fontFamily: "'Cormorant Garamond', serif",
@@ -118,7 +119,7 @@ function NewNovelHero() {
 							mt: 1,
 						}}
 					>
-						Northlight
+						Body and Soul
 					</Typography>
 					<Typography
 						sx={{
@@ -130,8 +131,9 @@ function NewNovelHero() {
 							mt: 2.5,
 						}}
 					>
-						A lighthouse keeper's daughter returns to the island that shaped her — and to the
-						secret the tide keeps pulling back to shore.
+						Zyana Reynolds is a successful writer, who has built a fanbase of readers. With her recent book being critized by her devoted 
+						readers for being inauthentic , she is compelled to experience a life that she protected herself from in the form of a dangerous 
+						man named Atlas Porter
 					</Typography>
 					<Box sx={{ display: 'flex', gap: 2, mt: 4, flexWrap: 'wrap' }}>
 						<Button variant="contained" color="primary" sx={{ px: '30px', py: '15px', fontSize: 13 }}>
@@ -143,94 +145,90 @@ function NewNovelHero() {
 					</Box>
 				</Box>
 				<Box sx={{ display: 'flex', justifyContent: { xs: 'center', md: 'flex-end' } }}>
+					{books[0].img && (
 					<Box
-						role="img"
-						aria-label="Northlight book cover"
-						sx={{
-							width: 'min(320px, 80%)',
-							aspectRatio: '2 / 3',
-							background: `linear-gradient(155deg, ${tokens.band} 0%, ${tokens.accent} 140%)`,
-							boxShadow:
-								'0 40px 80px -30px rgba(28,26,23,0.5), 0 8px 24px -12px rgba(28,26,23,0.3)',
-						}}
+						component="img"
+						src={books[0].img}
+						alt={`${books[0].title} cover`}
 					/>
+				)}
 				</Box>
 			</Box>
 		</Box>
 	);
 }
 
-function CollectionBand() {
-	return (
-		<Box
-			sx={{
-				bgcolor: tokens.band,
-				borderTop: `1px solid ${tokens.borderFaint}`,
-				borderBottom: `1px solid ${tokens.borderFaint}`,
-			}}
-		>
-			<Box sx={{ maxWidth: 1200, mx: 'auto', px: 3, py: 'clamp(52px, 6vw, 84px)' }}>
-				<Box
-					sx={{
-						display: 'flex',
-						justifyContent: 'space-between',
-						flexWrap: 'wrap',
-						gap: 2,
-						mb: 5,
-					}}
-				>
-					<Box>
-						<Eyebrow>The Collection</Eyebrow>
-						<Typography
-							sx={{
-								fontFamily: "'Cormorant Garamond', serif",
-								fontSize: 'clamp(32px, 4.5vw, 52px)',
-								fontWeight: 500,
-								color: tokens.ink,
-								mt: 1,
-							}}
-						>
-							More to read
-						</Typography>
-					</Box>
-					<Box
-						component={Link}
-						to="/books"
-						sx={{
-							alignSelf: 'flex-end',
-							fontFamily: "'Manrope', sans-serif",
-							fontSize: 12.5,
-							fontWeight: 600,
-							textTransform: 'uppercase',
-							color: tokens.accent,
-							textDecoration: 'none',
-						}}
-					>
-						View All Books →
-					</Box>
-				</Box>
-				<Box
-					sx={{
-						display: 'grid',
-						gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-						gap: 'clamp(28px, 4vw, 44px)',
-					}}
-				>
-					{featuredBooks.map((book) => (
-						<BookCard key={book.title} book={book} variant="compact" />
-					))}
-				</Box>
-			</Box>
-		</Box>
-	);
-}
+// function CollectionBand() {
+// 	return (
+// 		<Box
+// 			sx={{
+// 				bgcolor: tokens.band,
+// 				borderTop: `1px solid ${tokens.borderFaint}`,
+// 				borderBottom: `1px solid ${tokens.borderFaint}`,
+// 			}}
+// 		>
+// 			<Box sx={{ maxWidth: 1200, mx: 'auto', px: 3, py: 'clamp(52px, 6vw, 84px)' }}>
+// 				<Box
+// 					sx={{
+// 						display: 'flex',
+// 						justifyContent: 'space-between',
+// 						flexWrap: 'wrap',
+// 						gap: 2,
+// 						mb: 5,
+// 					}}
+// 				>
+// 					<Box>
+// 						<Eyebrow>The Collection</Eyebrow>
+// 						<Typography
+// 							sx={{
+// 								fontFamily: "'Cormorant Garamond', serif",
+// 								fontSize: 'clamp(32px, 4.5vw, 52px)',
+// 								fontWeight: 500,
+// 								color: tokens.ink,
+// 								mt: 1,
+// 							}}
+// 						>
+// 							More to read
+// 						</Typography>
+// 					</Box>
+// 					<Box
+// 						component={Link}
+// 						to="/books"
+// 						sx={{
+// 							alignSelf: 'flex-end',
+// 							fontFamily: "'Manrope', sans-serif",
+// 							fontSize: 12.5,
+// 							fontWeight: 600,
+// 							textTransform: 'uppercase',
+// 							color: tokens.accent,
+// 							textDecoration: 'none',
+// 						}}
+// 					>
+// 						View All Books →
+// 					</Box>
+// 				</Box>
+// 				<Box
+// 					sx={{
+// 						display: 'grid',
+// 						gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+// 						gap: 'clamp(28px, 4vw, 44px)',
+// 					}}
+// 				>
+// 					{featuredBooks.map((book) => (
+// 						<BookCard key={book.title} book={book} variant="compact" />
+// 					))}
+// 				</Box>
+// 			</Box>
+// 		</Box>
+// 	);
+// }
 
 export default function Home() {
 	return (
 		<>
 			<AboutTeaser />
 			<NewNovelHero />
-			<CollectionBand />
+			{/* <CollectionBand /> */}
 		</>
 	);
 }

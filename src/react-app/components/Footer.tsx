@@ -141,7 +141,7 @@ export default function Footer() {
 					}}
 				>
 					<Typography sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 12, color: tokens.footerMuted }}>
-						© 2025 Eliara Lee. All rights reserved.
+						© 2026 Eliara Lee. All rights reserved.
 					</Typography>
 				</Box>
 			</Box>
