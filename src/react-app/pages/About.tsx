@@ -25,8 +25,17 @@ export default function About() {
 						boxShadow: '0 34px 64px -30px rgba(28,26,23,0.45)',
 						position: 'sticky',
 						top: 100,
-					}}
-				/>
+					}}>
+						<img 
+							src="https://pub-456cb52783e5414b8d29402fb3af5b5c.r2.dev/AuthorFolder/author_img.jpeg" 
+							alt="Eliara Lee portrait" 
+							style={{ 
+								width: '100%', 
+								height: '100%', 
+								objectFit: 'cover', 
+								borderRadius: 0 
+								}}/>	
+				</Box>
 				<Box>
 					<Eyebrow>About</Eyebrow>
 					<Typography
@@ -50,8 +59,7 @@ export default function About() {
 							mt: 3,
 						}}
 					>
-						"I write toward the coastline I grew up on — the fog, the ferries, the houses that
-						hold more than they let on."
+						"<em>crafting stories that reflect her experience with love, family and magic</em>"
 					</Typography>
 
 					<Box sx={{ mt: 4, display: 'flex', flexDirection: 'column', gap: 2.5 }}>
@@ -66,15 +74,16 @@ export default function About() {
 						<Typography
 							sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 16, lineHeight: 1.8, color: tokens.bodyDark }}
 						>
-							Her debut, <em>A Map of Small Rooms</em>, was named a Best Book of the Year by three
-							national publications and established the quiet, luminous style that has become her
-							signature. Five novels later, her work has been translated into eighteen languages.
+							Married to her high school sweetheart <strong>her real-life “Book Bae”</strong> whose military career took their family to some of the most 
+							beautiful places in the US. Eliára is a devoted mother of two <strong>plus a fur baby</strong> and a proud “Gamma” to her grandson, Bam. 
+							Though she has filled countless notebooks and flash drives with stories over the years, 2026 marked a special milestone as 
+							she officially became a published author. 
 						</Typography>
 						<Typography
 							sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 16, lineHeight: 1.8, color: tokens.bodyDark }}
 						>
-							She lives on a small island off the coast, where she writes in a converted boathouse
-							and, when the tide allows, walks.
+							Eliára continues to write with the same passion she discovered as a child, crafting stories that reflect her love of “love”, family 
+							and the magic found within the pages of a good book. 
 						</Typography>
 					</Box>
 

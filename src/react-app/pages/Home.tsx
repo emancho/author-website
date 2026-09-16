@@ -34,8 +34,17 @@ function AboutTeaser() {
 						aspectRatio: '4 / 5',
 						background: `linear-gradient(155deg, ${tokens.band} 0%, ${tokens.muted} 140%)`,
 						boxShadow: '0 30px 60px -30px rgba(28,26,23,0.4)',
-					}}
-				/>
+					}}>
+						<img 
+							src="https://pub-456cb52783e5414b8d29402fb3af5b5c.r2.dev/AuthorFolder/author_img.jpeg" 
+							alt="Eliara Lee portrait" 
+							style={{ 
+								width: '100%', 
+								height: '100%', 
+								objectFit: 'cover', 
+								borderRadius: 0 
+								}}/>	
+					</Box>
 				<Box>
 					<Eyebrow>About the Author</Eyebrow>
 					<Typography
@@ -60,8 +69,8 @@ function AboutTeaser() {
 							mt: 2.5,
 						}}
 					>
-						Eliara Lee’s love of storytelling started at a young age. Growing up in the Midwest-Akron, Ohio to be exact, her fondest memories were getting her first library card and eagerly awaiting the BookMobile. 
-						Her imaginative talents honed since entertaining her first audience, her younger siblings, is now used to bring stories to life in the books she writes.
+						Eliara Lee’s love of storytelling started at a young age. Growing up in the Midwest-Akron, Ohio, her fondest memories was getting her first library card and eagerly awaiting for the Book Mobile. 
+						Starting with her first audience, her younger siblings; she honed her imaginative talents bentertaining a crowd with her tales. Never losing her passion for storytelling, Eliara now brings her stories to life in the books she writes.
 					</Typography>
 					<Box
 						component={Link}
