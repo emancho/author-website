@@ -20,12 +20,12 @@ export default function AllBooks() {
 						mt: 1,
 					}}
 				>
-					Six novels, one coastline
+					Current Novels:
 				</Typography>
 				<Typography
 					sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 16, lineHeight: 1.7, color: tokens.body, mt: 2 }}
 				>
-					Every book Eleanor has written, from her luminous debut to the new novel.
+					Every book Eliara has written, from her luminous debut to the new novel.
 				</Typography>
 			</Box>
 

@@ -30,7 +30,18 @@ export default function BookCard({ book, variant }: BookCardProps) {
 					'&:hover .book-cover': { transform: 'translateY(-6px)' },
 				}}
 			>
-				<Box className="book-cover" sx={coverSx('0 22px 42px -22px rgba(28,26,23,0.45)')} />
+				{book.img && (
+					<Box
+						component="img"
+						src={book.img}
+						alt={`${book.title} cover`}
+						sx={{
+							...coverSx('0 22px 42px -22px rgba(28,26,23,0.45)'),
+							width: 'min(320px, 80%)',
+						}}
+					/>
+				)}
+				
 				<Typography
 					sx={{
 						fontFamily: "'Cormorant Garamond', serif",
@@ -61,8 +72,18 @@ export default function BookCard({ book, variant }: BookCardProps) {
 			sx={{
 				'&:hover .book-cover': { transform: 'translateY(-6px)' },
 			}}
-		>
-			<Box className="book-cover" sx={coverSx('0 24px 46px -24px rgba(28,26,23,0.45)')} />
+		>			
+			{book.img && (
+				<Box
+					component="img"
+					src={book.img}
+					alt={`${book.title} cover`}
+					sx={{
+						...coverSx('0 34px 64px -30px rgba(28,26,23,0.45)'),
+						width: 'min(320px, 80%)',
+					}}
+				/>
+			)}
 			<Typography
 				sx={{
 					fontFamily: "'Cormorant Garamond', serif",

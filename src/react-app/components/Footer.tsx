@@ -32,10 +32,11 @@ function ColumnLabel({ children }: { children: ReactNode }) {
 	);
 }
 
-function SocialButton({ children, label }: { children: ReactNode; label: string }) {
+function SocialButton({ children, label, onclick }: { children: ReactNode; label: string, onclick?: () => void }) {
 	return (
 		<IconButton
 			aria-label={label}
+			onClick={onclick}
 			sx={{
 				width: 42,
 				height: 42,
@@ -71,7 +72,7 @@ export default function Footer() {
 								color: tokens.ivory,
 							}}
 						>
-							Eleanor Vance
+							Eliara Lee
 						</Typography>
 						<Typography
 							sx={{
@@ -87,7 +88,7 @@ export default function Footer() {
 							Novelist
 						</Typography>
 						<Typography sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 13.5, color: tokens.footerMutedLight }}>
-							New novel <em>Northlight</em> available now wherever books are sold.
+							<strong>Body and Soul </strong>  available now.
 						</Typography>
 					</Box>
 
@@ -118,21 +119,11 @@ export default function Footer() {
 					<Box>
 						<ColumnLabel>Follow</ColumnLabel>
 						<Box sx={{ display: 'flex', gap: 1.5 }}>
-							<SocialButton label="Instagram">
+							<SocialButton label="Instagram" onclick={() => window.open('https://www.instagram.com/author.e.lee', '_blank')}>
 								<InstagramIcon fontSize="small" />
 							</SocialButton>
-							<SocialButton label="X">
-								<Typography sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 15, fontWeight: 600 }}>
-									X
-								</Typography>
-							</SocialButton>
-							<SocialButton label="Facebook">
+							<SocialButton label="Facebook" onclick={() => window.open('https://www.facebook.com/profile.php?id=61570695410050', '_blank')}>
 								<FacebookIcon fontSize="small" />
-							</SocialButton>
-							<SocialButton label="Goodreads">
-								<Typography sx={{ fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: 18 }}>
-									g
-								</Typography>
 							</SocialButton>
 						</Box>
 					</Box>
@@ -150,10 +141,7 @@ export default function Footer() {
 					}}
 				>
 					<Typography sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 12, color: tokens.footerMuted }}>
-						© 2025 Eleanor Vance. All rights reserved.
-					</Typography>
-					<Typography sx={{ fontFamily: "'Manrope', sans-serif", fontSize: 12, color: tokens.footerMuted }}>
-						Site by design handoff
+						© 2026 Eliara Lee. All rights reserved.
 					</Typography>
 				</Box>
 			</Box>
